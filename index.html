@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All in One Place</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>All in One Place</h1>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#login">Login</a></li>
+      </ul>
+      <select id="languageSwitcher">
+        <option value="en">English</option>
+        <option value="hi">हिंदी</option>
+      </select>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2 data-en="Welcome to All in One Place" data-hi="ऑल इन वन प्लेस में आपका स्वागत है">Welcome to All in One Place</h2>
+    <p data-en="Your destination for all event and travel needs." data-hi="आपकी सभी इवेंट और ट्रैवल जरूरतों के लिए एक ही जगह।">Your destination for all event and travel needs.</p>
+    <button onclick="bookNow()">Book Now</button>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>We provide comprehensive event and travel management services tailored to your needs.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Event Planning</li>
+      <li>Venue Booking</li>
+      <li>Travel Coordination</li>
+      <li>Catering</li>
+      <li>Photography</li>
+    </ul>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <img src="https://via.placeholder.com/200" alt="Event 1" />
+    <img src="https://via.placeholder.com/200" alt="Travel 1" />
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" name="name" placeholder="Name" required />
+      <input type="email" name="email" placeholder="Email" required />
+      <textarea name="message" placeholder="Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <section id="login">
+    <h2>Login/Register</h2>
+    <form id="loginForm">
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+    <form id="registerForm">
+      <input type="text" placeholder="Name" required />
+      <input type="email" placeholder="Email" required />
+      <input type="password" placeholder="Password" required />
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 All in One Place. All rights reserved.</p>
+  </footer>
+</body>
+</html>
